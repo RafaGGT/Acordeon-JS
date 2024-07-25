@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    background: linear-gradient(360deg, #003366, #66CCFF, #F0FFFF);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*soluciona el problema de que solo se coloque en el acordeon*/
+}
+
+.acordeon-container {
+    display: flex;
+    flex-direction: column;
+    /*divs verticales*/
+    justify-content: center;
+    /*centrado de divs*/
+    align-items: center;
+    /*centrado de divs*/
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.acordeon {
+    background-color: #E6E6FA;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 50px;
+    /*separa el contenido*/
+    align-items: center;
+    /*alinea los divs para que se miren de frente*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.acordeon-text {
+    padding: 5px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.acordeon-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.down {
+    display: inline;
+}
+
+.up {
+    transform: rotate(180deg);
+    /*funcion que transforma la imagen, este caso la rota 180 grados*/
+    display: none;
+}
+
+/*texto desplegable*/
+.contenido {
+    text-align: center;
+    display: none;
+    background-color: #E6E6FA;
+    border: 1px solid #D3D3D3;
+    width: 500px;
+    height: auto;
+    /*permitimos que se adapte al texto*/
+}
